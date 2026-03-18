@@ -1,6 +1,6 @@
 # SOP(Team) Framework
 
-A generic, reusable multi-agent software development framework powered by Claude Code subagents. Inspired by MetaGPT, this framework orchestrates a complete software team: Product Manager -> Architect -> Engineer -> QA -> DevOps.
+A generic, reusable multi-agent software development framework powered by Claude Code subagents. Inspired by 360AI, this framework orchestrates a complete software team: Product Manager -> Architect -> Engineer -> QA -> DevOps.
 
 ---
 
