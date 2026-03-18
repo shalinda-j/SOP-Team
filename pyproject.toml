@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sop-team-framework"
+version = "0.1.0"
+description = "A generic, reusable multi-agent software development framework powered by Claude Code subagents"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "Shalinda J", email = "shalinda@example.com"}
+]
+keywords = [
+    "ai",
+    "agents",
+    "multi-agent",
+    "sop",
+    "software-development",
+    "automation",
+    "claude",
+    "llm",
+    "framework"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "claude-agent-sdk>=0.1.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+]
+
+[project.scripts]
+sop-team = "sop_team_framework.agent:main"
+
+[project.urls]
+Homepage = "https://github.com/shalinda-j/SOP-Team"
+Documentation = "https://github.com/shalinda-j/SOP-Team#readme"
+Repository = "https://github.com/shalinda-j/SOP-Team.git"
+Issues = "https://github.com/shalinda-j/SOP-Team/issues"
+Changelog = "https://github.com/shalinda-j/SOP-Team/blob/main/CHANGELOG.md"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["sop_team_framework*"]
+
+[tool.setuptools.package-data]
+sop_team_framework = ["py.typed", "agents/*.md"]
